@@ -55,7 +55,7 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O        &kp O    &kp J
+                 &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O        &kp U    &kp J
                  &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y           &lt 2 H      &hm RSHFT A  &lt 1 E  &hm LALT I
 &lt 5 BACKSPACE  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K             &hm RCTRL P  &kp COMMA    &kp DOT  &hm RGUI SLASH  &kp ENTER
                                           &none        &kp UNDERSCORE  &kp SPACE    &kp ESC           &key_repeat  &none
@@ -113,6 +113,7 @@
         };
 
         Game {
+            display-name = "Game";
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
