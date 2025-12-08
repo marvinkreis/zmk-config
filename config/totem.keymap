@@ -97,12 +97,12 @@
             key-positions = <11 12>;
         };
 
-        S-Tab {
+        STab {
             bindings = <&kp LS(TAB)>;
             key-positions = <18 17>;
         };
 
-        Caps-Word {
+        CapsWord {
             bindings = <&caps_word>;
             key-positions = <16 17>;
         };
