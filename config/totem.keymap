@@ -124,10 +124,10 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O               &kp U          &kp J
-                 &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y           &lt 2 H      &hm RSHFT A         &lt 1 E        &hm LALT I
-&lt 5 BACKSPACE  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K             &hm RCTRL P  &comma_exclamation  &dot_question  &slash_asterisk  &kp ENTER
-                                          &none        &kp UNDERSCORE  &kp SPACE    &kp ESC           &key_repeat  &none
+       &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O               &kp U          &kp J
+       &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y           &lt 2 H      &hm RSHFT A         &lt 1 E        &hm LALT I
+&mo 5  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K             &hm RCTRL P  &comma_exclamation  &dot_question  &slash_asterisk  &trans
+                                &none        &kp UNDERSCORE  &kp SPACE    &kp ESC           &key_repeat  &none
             >;
         };
 
@@ -154,10 +154,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-        &trans  &trans  &trans       &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
-        &trans  &trans  &hm LCTRL R  &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp TAB
-&trans  &trans  &trans  &trans       &trans     &trans    &trans    &trans         &trans        &trans     &trans      &trans
-                        &kp LC(V)    &kp LS(V)  &kp V     &trans    &kp DOT        &trans
+        &trans  &trans       &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
+        &trans  &mt LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp TAB
+&trans  &trans  &trans       &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &trans
+                             &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
             >;
         };
 
