@@ -67,7 +67,7 @@
         slash_asterisk: slash_asterisk {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH_ASTERISK";
-            bindings = <&kp SLASH>, <&kp ASTRK>;
+            bindings = <&mt RGUI SLASH>, <&mt RGUI ASTERISK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -84,12 +84,12 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
+            key-positions = <0 1>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <19 18>;
+            key-positions = <1 2>;
         };
 
         Tab {
