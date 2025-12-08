@@ -45,6 +45,33 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        comma_exclamation: comma_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_EXCLAMATION";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_question: dot_question {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_QUESTION";
+            bindings = <&kp DOT>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        slash_asterisk: slash_asterisk {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_ASTERISK";
+            bindings = <&kp SLASH>, <&kp ASTRK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -55,9 +82,9 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O        &kp U    &kp J
-                 &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y           &lt 2 H      &hm RSHFT A  &lt 1 E  &hm LALT I
-&lt 5 BACKSPACE  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K             &hm RCTRL P  &kp COMMA    &kp DOT  &hm RGUI SLASH  &kp ENTER
+                 &kp B           &kp L    &kp D        &kp W           &kp Z        &kp SINGLE_QUOTE  &kp F        &kp O               &kp U          &kp J
+                 &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y           &lt 2 H      &hm RSHFT A         &lt 1 E        &hm LALT I
+&lt 5 BACKSPACE  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K             &hm RCTRL P  &comma_exclamation  &dot_question  &slash_asterisk  &kp ENTER
                                           &none        &kp UNDERSCORE  &kp SPACE    &kp ESC           &key_repeat  &none
             >;
         };
