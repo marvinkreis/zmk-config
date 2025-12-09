@@ -222,12 +222,12 @@
 
         C_Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
 
         C_Tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
 
         C_STab {
@@ -259,11 +259,6 @@
             bindings = <&leader>;
             key-positions = <22 23>;
         };
-
-        C_Backspace_Right {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <6 7>;
-        };
     };
 
     macros {
@@ -286,7 +281,7 @@
        &kp B            &kp L     &kp D         &kp W                &kp Z        &sqt_adapt  &kp F         &kp O         &kp U       &kp J
        &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S             &kp G        &htr 4 Y    &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
 &mo 5  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C         &kp V        &kp K       &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &trans
-                                  &none         &mt UNDERSCORE RALT  &kp SPACE    &kp ESCAPE  &kp ENTER     &none
+                                  &none         &mt RALT UNDERSCORE  &kp SPACE    &kp ESCAPE  &key_repeat   &none
             >;
         };
 
@@ -313,9 +308,9 @@
         Nav {
             display-name = "Nav";
             bindings = <
-        &trans  &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &kp INSERT
-        &trans  &hml LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp DELETE
-&tog 3  &trans  &trans        &trans     &trans     &trans    &trans    &kp BACKSPACE  &kp ENTER     &kp DELETE  &trans      &trans
+        &trans  &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
+        &trans  &hml LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE
+&tog 3  &trans  &trans        &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &trans
                               &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
             >;
         };
