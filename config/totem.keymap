@@ -150,14 +150,14 @@
        &kp B           &kp L    &kp D        &kp W           &kp Z        &sqt_under  &kp F        &kp O        &kp U       &kp J
        &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y     &lt 2 H      &hm RSHFT A  &lt 1 E     &hm LALT I
 &mo 5  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K       &hm RCTRL P  &comma_excl  &dot_qmark  &fslh_astrk  &trans
-                                &none        &kp UNDERSCORE  &kp SPACE    &kp ESC     &key_repeat  &none
+                                &none        &kp UNDERSCORE  &kp SPACE    &sk LSHIFT  &key_repeat  &none
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp GRAVE  &kp LT     &kp GT            &kp MINUS          &kp PIPE     &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp SINGLE_QUOTE
+        &kp GRAVE  &kp LT     &kp GT            &kp MINUS          &kp PIPE     &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp GRAVE
         &kp EXCL   &kp ASTRK  &kp SLASH         &kp EQUAL          &kp AMPS     &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
 &tog 1  &kp TILDE  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PRCNT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SLASH          &trans
                               &trans            &trans             &trans       &trans       &trans                &trans
@@ -179,7 +179,7 @@
             bindings = <
         &trans  &trans       &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
         &trans  &hm LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp TAB
-&tog 3  &trans  &trans       &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &trans
+&tog 3  &trans  &trans       &trans     &trans     &trans    &trans    &kp BACKSPACE  &kp DELETE    &trans     &trans      &trans
                              &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
             >;
         };
