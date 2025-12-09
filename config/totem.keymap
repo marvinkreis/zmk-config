@@ -69,7 +69,7 @@
         fslh_astrk: fslh_astrk {
             compatible = "zmk,behavior-mod-morph";
             label = "FSLH_ASTRK";
-            bindings = <&hm RGUI SLASH>, <&hm RGUI ASTERISK>;
+            bindings = <&hmr RGUI SLASH>, <&hmr RGUI ASTERISK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -84,7 +84,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        sqt_alt_rep: sqt_alt_rep {
+        sqt_adapt: sqt_adapt {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&sqt_under>;
@@ -112,6 +112,58 @@
                 max-prior-idle-ms = <300>;
                 bindings = <&kp U>;
             };
+        };
+
+        hml: homerow_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 15 26 27 16 6 7 17 28 29 18 8 9 19 30 31 32 33 34 35 36 37>;
+            hold-trigger-on-release;
+        };
+
+        hmr: homerow_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <32 33 34 35 36 37 3 4 14 25 24 13 2 23 12 11 22 1 0 21 10 20>;
+            hold-trigger-on-release;
+        };
+
+        htl: homerow_tap_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_TAP_LEFT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 15 26 27 16 6 7 17 28 29 18 8 9 19 30 31 32 33 34 35 36 37>;
+            hold-trigger-on-release;
+        };
+
+        htr: homrow_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_TAP_RIGHT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <32 33 34 35 36 37 3 4 14 25 24 13 2 23 12 11 22 1 0 21 10 20>;
+            hold-trigger-on-release;
         };
     };
 
@@ -176,10 +228,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp B           &kp L    &kp D        &kp W           &kp Z        &sqt_alt_rep  &kp F        &kp O        &kp U       &kp J
-       &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y       &lt 2 H      &hm RSHFT A  &lt 1 E     &hm LALT I
-&mo 5  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K         &hm RCTRL P  &comma_excl  &dot_qmark  &fslh_astrk  &trans
-                                &none        &kp UNDERSCORE  &kp SPACE    &kp ESCAPE    &kp ENTER    &none
+       &kp B            &kp L     &kp D         &kp W           &kp Z        &sqt_adapt  &kp F         &kp O         &kp U       &kp J
+       &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S        &kp G        &htr 4 Y    &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
+&mo 5  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C    &kp V        &kp K       &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &trans
+                                  &none         &kp UNDERSCORE  &kp SPACE    &kp ESCAPE  &kp ENTER     &none
             >;
         };
 
@@ -206,10 +258,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-        &trans  &trans       &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
-        &trans  &hm LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp TAB
-&tog 3  &trans  &trans       &trans     &trans     &trans    &trans    &kp BACKSPACE  &kp DELETE    &trans     &trans      &trans
-                             &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
+        &trans  &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
+        &trans  &hml LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp TAB
+&tog 3  &trans  &trans        &trans     &trans     &trans    &trans    &kp BACKSPACE  &kp DELETE    &trans     &trans      &trans
+                              &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
             >;
         };
 
