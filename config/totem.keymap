@@ -33,6 +33,8 @@
     quick-tap-ms = <150>;
 };
 
+#include "leader.dtsi"
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -81,6 +83,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        
+        sqt_alt_rep: sqt_alt_rep {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&sqt_under>;
+
+            sqt_ao { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp O>; };
+            sqt_oa { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
+            sqt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+            sqt_eu { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
+        }
     };
 
     combos {
@@ -147,7 +160,7 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp B           &kp L    &kp D        &kp W           &kp Z        &sqt_under  &kp F        &kp O        &kp U       &kp J
+       &kp B           &kp L    &kp D        &kp W           &kp Z        &sqt_alt_rep  &kp F        &kp O        &kp U       &kp J
        &hm LALT N      &lt 1 R  &hm LSHFT T  &lt 3 S         &kp G        &lt 4 Y     &lt 2 H      &hm RSHFT A  &lt 1 E     &hm LALT I
 &mo 5  &hm LEFT_GUI Q  &kp X    &kp M        &hm LCTRL C     &kp V        &kp K       &hm RCTRL P  &comma_excl  &dot_qmark  &fslh_astrk  &trans
                                 &none        &kp UNDERSCORE  &kp SPACE    &sk LSHIFT  &key_repeat  &none
