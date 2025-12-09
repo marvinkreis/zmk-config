@@ -154,7 +154,7 @@
         };
 
         C_Leader {
-            bindings = <&none>;
+            bindings = <&leader>;
             key-positions = <12 13>;
         };
     };
