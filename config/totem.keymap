@@ -93,7 +93,7 @@
             sqt_oa { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
             sqt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
             sqt_eu { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp U>; };
-        }
+        };
     };
 
     combos {
