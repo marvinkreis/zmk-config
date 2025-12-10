@@ -37,17 +37,6 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
         comma_excl: comma_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_EXCL";
@@ -197,13 +186,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        bluetooth: bluetooth {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BLUETOOTH";
-            #binding-cells = <0>;
-            bindings = <&out OUT_TOG>, <&bt BT_CLR>;
-        };
     };
 
     combos {
@@ -285,7 +267,7 @@
             bindings = <
                  &kp B            &kp L     &kp D          &kp W         &kp Z        &sqt_caps   &kp F         &kp O         &kp U       &kp J
                  &hml LALT N      &htl 1 R  &hml LSHFT T   &htl 3 S      &kp G        &htr 4 Y    &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
-&lt 5 BACKSPACE  &hml LEFT_GUI Q  &kp X     &kp M          &hml LCTRL C  &kp V        &kp K       &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &bluetooth
+&lt 5 BACKSPACE  &hml LEFT_GUI Q  &kp X     &kp M          &hml LCTRL C  &kp V        &kp K       &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &out OUT_TOG
                                             &kp RIGHT_ALT  &rep_adapt    &kp SPACE    &kp ESCAPE  &kp UNDER     &none
             >;
         };
@@ -335,7 +317,7 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans
         &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &tog 5
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &bt BT_CLR
                         &trans  &trans  &trans    &trans             &trans        &trans
             >;
         };
