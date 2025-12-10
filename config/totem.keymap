@@ -193,14 +193,14 @@
 
         C_Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             timeout-ms = <30>;
             require-prior-idle-ms = <100>;
         };
 
         C_Tab {
             bindings = <&kp TAB>;
-            key-positions = <12 11>;
+            key-positions = <12 13>;
             timeout-ms = <20>;
             require-prior-idle-ms = <150>;
         };
@@ -214,8 +214,8 @@
 
         C_Enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-            timeout-ms = <20>;
+            key-positions = <16 17 18>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
@@ -235,7 +235,7 @@
 
         C_Leader {
             bindings = <&leader>;
-            key-positions = <12 13>;
+            key-positions = <16 17>;
             timeout-ms = <20>;
             require-prior-idle-ms = <150>;
         };
