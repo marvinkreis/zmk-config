@@ -89,49 +89,41 @@
 
             ao {
                 trigger-keys = <A>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp O>;
             };
 
             oa {
                 trigger-keys = <O>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp A>;
             };
 
             ue {
                 trigger-keys = <U>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp E>;
             };
 
             eu {
                 trigger-keys = <E>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp U>;
             };
 
             br {
                 trigger-keys = <B>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp R>;
             };
 
             ph {
                 trigger-keys = <P>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp H>;
             };
 
             sc {
                 trigger-keys = <S>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp C>;
             };
 
             gs {
                 trigger-keys = <G>;
-                max-prior-idle-ms = <300>;
                 bindings = <&kp S>;
             };
         };
@@ -329,7 +321,7 @@
             bindings = <
        &kp B            &kp L     &kp D         &kp W                &kp Z        &kp SINGLE_QUOTE  &kp F         &kp O         &kp U       &kp J
        &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S             &kp G        &htr 4 Y          &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
-&mo 5  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C         &kp V        &kp K             &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &trans
+&lt 5 BACKSPACE  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C         &kp V        &kp K             &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_astrk  &trans
                                   &none         &mt RALT UNDERSCORE  &kp SPACE    &kp ESCAPE        &rep_adapt    &none
             >;
         };
