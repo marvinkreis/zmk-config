@@ -32,10 +32,10 @@ layers:
   - {t: ',', s: '!'}
   - {t: ., s: '?'}
   - {t: '"', h: RGui, s: '`'}
-  - Toggle BLE/USB
+  - Toggle BT/USB
   - ''
   - _
-  - ␣
+  - $$material:space_bar$$
   - Esc
   - {t: LShift, h: sticky, s: CapsWord}
   - RAlt
@@ -123,21 +123,21 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
-  - INSERT
+  - Home
+  - Page Down
+  - Page Up
+  - End
+  - Insert
   - {type: trans}
   - {t: R, h: LCtrl}
   - {type: trans}
   - {type: held}
   - {type: trans}
-  - ←
-  - ↑
-  - ↓
-  - →
-  - ⌦
+  - "$$material:keyboard_arrow_left$$"
+  - "$$material:keyboard_arrow_down$$"
+  - "$$material:keyboard_arrow_up$$"
+  - "$$material:keyboard_arrow_right$$"
+  - Delete
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -201,20 +201,20 @@ layers:
   - ^D
   - ^W
   - ^Z
-  - { t: "⏮", s: "⏮ Album" }
+  - { t: "$$material:skip_previous$$", s: "$$material:skip_previous$$" }
   - Playback Mode
-  - { t: "🔀", s: "🔀 Album" }
-  - { t: "⏭", s: "⏭ Album" }
+  - { t: "$$material:shuffle$$", s: "$$material:shuffle$$" }
+  - { t: "$$material:skip_next$$", s: "$$material:skip_next$$" }
   - {type: trans}
   - ^N
   - ^R
   - ^T
   - ^S
   - ^E
-  - 🔉
-  - { t: "Show Info", s: "Open Player" }
-  - { t: "⏯", s: "⏹" }
-  - 🔊
+  - "$$material:volume_down$$"
+  - { t: "Show Playing", s: "Open Player" }
+  - { t: "$$material:play_pause$$", s: "$$material:stop$$" }
+  - "$$material:volume_up$$"
   - {type: trans}
   - {type: held}
   - ^A
@@ -266,23 +266,23 @@ layers:
   - ','
   - .
   - /
-  - {t: ⌫, s: ↵}
+  - {t: "$$material:backspace$$", s: "$$material:keyboard_return$$"}
   - Esc
-  - Tab
-  - ␣
+  - "$$material:keyboard_tab$$"
+  - $$material:space_bar$$
   - '1'
   - '2'
   - '3'
 combos:
 - p: [22, 23]
   l: ["Base"]
-  k: ⌫
+  k: "$$material:backspace$$"
 - p: [12, 11]
   l: ["Base"]
-  k: Tab
+  k: "$$material:keyboard_tab$$"
 - p: [18, 17]
   l: ["Base"]
-  k: ⇧Tab
+  k: "$$material:keyboard_tab_rtl$$"
 - p: [28, 29]
   l: ["Base"]
-  k: ↵
+  k: "$$material:keyboard_return$$"
