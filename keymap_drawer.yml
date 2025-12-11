@@ -1,0 +1,288 @@
+layout: {zmk_keyboard: totem}
+layers:
+  Base:
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - {t: '''', s: 'Leader'}
+  - F
+  - O
+  - U
+  - J
+  - {t: N, h: LAlt}
+  - {t: R, h: Sym}
+  - {t: T, h: LShift}
+  - {t: S, h: Nav}
+  - G
+  - {t: Y, h: Fun}
+  - {t: H, h: Num}
+  - {t: A, h: RShift}
+  - {t: E, h: Sym}
+  - {t: I, h: LAlt}
+  - {t: Menu, h: Hot}
+  - {t: Q, h: LGui}
+  - X
+  - M
+  - {t: C, h: LCtrl}
+  - V
+  - K
+  - {t: P, h: RCtrl}
+  - {t: ',', s: '!'}
+  - {t: ., s: '?'}
+  - {t: '"', h: RGui, s: '`'}
+  - Toggle BLE/USB
+  - ''
+  - _
+  - ␣
+  - Esc
+  - {t: LShift, h: sticky, s: CapsWord}
+  - RAlt
+  Sym:
+  - \
+  - <
+  - '>'
+  - '-'
+  - '|'
+  - ^
+  - '{'
+  - '}'
+  - $
+  - ''''
+  - '!'
+  - {t: '*', type: held}
+  - /
+  - '='
+  - '&'
+  - '#'
+  - (
+  - )
+  - ;
+  - '`'
+  - {type: trans}
+  - '~'
+  - +
+  - '['
+  - ']'
+  - '%'
+  - '@'
+  - ':'
+  - ','
+  - .
+  - '"'
+  - {t: Layer Lock}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Num:
+  - '-'
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - X
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '*'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Layer Lock}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Nav:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - INSERT
+  - {type: trans}
+  - {t: R, h: LCtrl}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - ←
+  - ↑
+  - ↓
+  - →
+  - ⌦
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Layer Lock}
+  - ^V
+  - ⇧V
+  - V
+  - {type: trans}
+  - .
+  - {type: trans}
+  Fun:
+  - F12
+  - F7
+  - F8
+  - F9
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - F10
+  - F1
+  - F2
+  - F2
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - F11
+  - F4
+  - F5
+  - F6
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Layer Lock}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Hot:
+  - ^B
+  - ^L
+  - ^Y
+  - ^W
+  - ^Z
+  - { t: "⏮", s: "⏮ Album" }
+  - Playback Mode
+  - { t: "🔀", s: "🔀 Album" }
+  - { t: "⏭", s: "⏭ Album" }
+  - {type: trans}
+  - ^N
+  - ^R
+  - ^T
+  - ^S
+  - ^E
+  - 🔉
+  - { t: "Show Info", s: "Open Player" }
+  - { t: "⏯", s: "⏹" }
+  - 🔊
+  - {type: trans}
+  - {type: held}
+  - ^A
+  - ^X
+  - ^F
+  - ^C
+  - ^V
+  - ^-
+  - ^0
+  - ^+
+  - ^=
+  - {type: trans}
+  - Clear BT Profile
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Game:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - LShift
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ⌫, s: ↵}
+  - Esc
+  - Tab
+  - ␣
+  - '1'
+  - '2'
+  - '3'
+combos:
+- p: [22, 23]
+  l: ["Base"]
+  k: ⌫
+- p: [12, 11]
+  l: ["Base"]
+  k: Tab
+- p: [18, 17]
+  l: ["Base"]
+  k: ⇧Tab
+- p: [28, 29]
+  l: ["Base"]
+  k: ↵

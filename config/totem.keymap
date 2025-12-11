@@ -196,7 +196,7 @@
         dqt_grv: dqt_grv {
             compatible = "zmk,behavior-mod-morph";
             label = "DQT_GRV";
-            bindings = <&hmr RIGHT_GUI DOUBLE_QUOTES>, <&hmr RIGHT_GUI GRAVE>;
+            bindings = <&hmr RGUI DOUBLE_QUOTES>, <&hmr RGUI GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -262,8 +262,8 @@
             bindings = <
                  &kp B            &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O          &kp U       &kp J
                  &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A   &htr 1 E    &hmr LALT I
-&lt 5 LG(ENTER)  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl    &dot_qmark  &dqt_grv     &out OUT_TOG
-                                            &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RIGHT_ALT
+&lt 5 LG(ENTER)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl    &dot_qmark  &dqt_grv     &out OUT_TOG
+                                            &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RALT
             >;
         };
 
