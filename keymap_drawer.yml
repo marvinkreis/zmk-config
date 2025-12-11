@@ -198,7 +198,7 @@ layers:
   Hot:
   - ^B
   - ^L
-  - ^Y
+  - ^D
   - ^W
   - ^Z
   - { t: "⏮", s: "⏮ Album" }
@@ -228,9 +228,9 @@ layers:
   - ^=
   - {type: trans}
   - Clear BT Profile
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - ^H
+  - ^O
+  - ^Y
   - {type: trans}
   - {type: trans}
   - {type: trans}
