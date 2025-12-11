@@ -200,7 +200,7 @@
 
         C_Tab {
             bindings = <&kp TAB>;
-            key-positions = <12 13>;
+            key-positions = <16 17>;
             timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
@@ -228,7 +228,7 @@
 
         C_Leader {
             bindings = <&leader>;
-            key-positions = <16 17>;
+            key-positions = <13 12>;
             timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
