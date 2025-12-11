@@ -201,14 +201,14 @@
         C_Tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 
         C_STab {
             bindings = <&kp LS(TAB)>;
             key-positions = <18 17>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 
@@ -226,17 +226,10 @@
             require-prior-idle-ms = <0>;
         };
 
-        C_Updir {
-            bindings = <&M_Updir>;
-            key-positions = <29 30 32>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <0>;
-        };
-
         C_Leader {
             bindings = <&leader>;
             key-positions = <16 17>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 

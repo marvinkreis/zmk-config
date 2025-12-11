@@ -20,3 +20,6 @@ ZMK_LEADER_SEQUENCE(de_oe,      &kp RA(O),         O)  // ö
 ZMK_LEADER_SEQUENCE(de_ue,      &kp RA(U),         U)  // ü
 ZMK_LEADER_SEQUENCE(de_eszett,  &kp RA(S),         S)  // ß
 ZMK_LEADER_SEQUENCE(de_eur,     &kp RA(E),         E)  // €
+
+/* Macros */
+ZMK_LEADER_SEQUENCE(m_updir,    &M_Updir,          DOT)  // ../
