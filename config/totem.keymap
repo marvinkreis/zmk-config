@@ -260,10 +260,10 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B            &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O          &kp U       &kp J
-                 &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A   &htr 1 E    &hmr LALT I
-&lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl    &dot_qmark  &dqt_grv     &out OUT_TOG
-                                            &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RALT
+                 &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J
+                 &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
+&lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &dqt_grv     &out OUT_TOG
+                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RALT
             >;
         };
 
@@ -310,10 +310,10 @@
         Hot {
             display-name = "Hot";
             bindings = <
-        &kp LC(B)  &kp LC(L)  &kp LC(Y)  &kp LC(W)  &kp LC(Z)    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans
-        &kp LC(N)  &kp LC(R)  &kp LC(T)  &kp LC(S)  &kp LC(E)    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans
-&trans  &kp LC(A)  &kp LC(X)  &kp LC(F)  &kp LC(C)  &kp LC(V)    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &bt BT_CLR
-                              &trans     &trans     &trans       &trans             &trans        &trans
+        &kp LC(B)        &kp LC(L)  &kp LC(D)              &kp LC(W)  &kp LC(Z)    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans
+        &hml LALT LC(N)  &kp LC(R)  &hml LEFT_SHIFT RC(T)  &kp LC(S)  &kp LC(E)    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans
+&trans  &hml LGUI LC(A)  &kp LC(X)  &kp LC(F)              &kp LC(C)  &kp LC(V)    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &bt BT_CLR
+                                    &kp LC(H)              &kp LC(O)  &kp LC(Y)    &trans             &trans        &trans
             >;
         };
 
