@@ -64,15 +64,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        sqt_under: sqt_under {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SQT_UNDER";
-            bindings = <&kp SINGLE_QUOTE>, <&kp UNDERSCORE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         rep_adapt: rep_adapt {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -186,6 +177,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        caps: caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS";
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dqt_grv: dqt_grv {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DQT_GRV";
+            bindings = <&hmr RIGHT_GUI DOUBLE_QUOTES>, <&hmr RIGHT_GUI GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sqt_leader: sqt_leader {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQT_LEADER";
+            bindings = <&kp SINGLE_QUOTE>, <&key_repeat>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -213,22 +231,8 @@
 
         C_Enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-        };
-
-        C_Semicolon {
-            bindings = <&kp SEMICOLON>;
             key-positions = <28 29>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <0>;
-        };
-
-        C_Leader {
-            bindings = <&leader>;
-            key-positions = <13 12>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <150>;
         };
     };
@@ -250,19 +254,19 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B            &kp L     &kp D         &kp W         &kp Z        &sqt_caps   &kp F         &kp O          &kp U       &kp J
-                 &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y    &htr 2 H      &hmr RSHFT A   &htr 1 E    &hmr LALT I
-&lt 5 BACKSPACE  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K       &hmr RCTRL P  &comma_excl    &dot_qmark  &fslh_astrk  &out OUT_TOG
-                                            &none         &kp UNDER     &kp SPACE    &kp ESCAPE  &sk LSHIFT    &kp RIGHT_ALT
+                 &kp B            &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O          &kp U       &kp J
+                 &hml LALT N      &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A   &htr 1 E    &hmr LALT I
+&lt 5 LG(ENTER)  &hml LEFT_GUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl    &dot_qmark  &dqt_grv     &out OUT_TOG
+                                            &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RIGHT_ALT
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp BACKSLASH  &kp LT     &kp GT            &kp MINUS          &kp PIPE     &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp GRAVE
-        &kp EXCL       &kp ASTRK  &kp SLASH         &kp EQUAL          &kp AMPS     &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
-&trans  &kp TILDE      &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PRCNT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SLASH          &tog 1
+        &kp BACKSLASH  &kp LT     &kp GT            &kp MINUS          &kp PIPE     &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp SINGLE_QUOTE
+        &kp EXCL       &kp ASTRK  &kp SLASH         &kp EQUAL          &kp AMPS     &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp GRAVE
+&trans  &kp TILDE      &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PRCNT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp DOUBLE_QUOTES  &tog 1
                                   &trans            &trans             &trans       &trans       &trans                &trans
             >;
         };
@@ -300,10 +304,10 @@
         Hot {
             display-name = "Hot";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &bt BT_CLR
-                        &trans  &trans  &trans    &trans             &trans        &trans
+        &kp LC(B)  &kp LC(L)  &kp LC(Y)  &kp LC(W)  &kp LC(Z)    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans
+        &kp LC(N)  &kp LC(R)  &kp LC(T)  &kp LC(S)  &kp LC(E)    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans
+&trans  &kp LC(A)  &kp LC(X)  &kp LC(F)  &kp LC(C)  &kp LC(V)    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans  &bt BT_CLR
+                              &trans     &trans     &trans       &trans             &trans        &trans
             >;
         };
 
