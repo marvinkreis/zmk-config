@@ -199,7 +199,7 @@
         sqt_leader: sqt_leader {
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_LEADER";
-            bindings = <&kp SINGLE_QUOTE>, <&key_repeat>;
+            bindings = <&kp SINGLE_QUOTE>, <&leader>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
