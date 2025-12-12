@@ -1,9 +1,9 @@
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "leader.dtsi"
 #include <behaviors/battery_percentage_printer.dtsi>
+#include <behaviors.dtsi>
 
 //
 //                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
@@ -209,6 +209,26 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        tm: thumb_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+        };
+
+        tl: thumb_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -269,10 +289,10 @@
         Base {
             display-name = "Base";
             bindings = <
-                 &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J
-                 &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
-&lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &dqt_grv     &out OUT_TOG
-                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RALT
+                 &kp B        &kp L     &kp D         &kp W         &kp Z          &sqt_leader  &kp F         &kp O         &kp U       &kp J
+                 &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G          &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
+&lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V          &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &dqt_grv     &out OUT_TOG
+                                        &none         &kp UNDER     &tl 1 SPACE    &caps        &kp ESCAPE    &kp RALT
             >;
         };
 
