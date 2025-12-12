@@ -40,6 +40,7 @@
 };
 
 #include "leader.dtsi"
+#include <behaviors/battery_percentage_printer.dtsi>
 
 / {
     behaviors {
@@ -243,12 +244,12 @@
         };
 
         C_Battery_Left {
-            bindings = <&none>;
+            bindings = <&bapp>;
             key-positions = <10 11 12 13>;
         };
 
         C_Battery_Right {
-            bindings = <&none>;
+            bindings = <&bapp>;
             key-positions = <16 17 18 19>;
         };
     };
