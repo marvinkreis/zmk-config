@@ -241,6 +241,16 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
         };
+
+        C_Battery_Left {
+            bindings = <&none>;
+            key-positions = <10 11 12 13>;
+        };
+
+        C_Battery_Right {
+            bindings = <&none>;
+            key-positions = <16 17 18 19>;
+        };
     };
 
     macros {
