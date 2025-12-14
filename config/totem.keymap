@@ -1,9 +1,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "leader.dtsi"
-#include <behaviors/battery_percentage_printer.dtsi>
 #include <behaviors.dtsi>
+#include <behaviors/battery_percentage_printer.dtsi>
+#include "leader.dtsi"
 
 //
 //                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
@@ -265,6 +265,16 @@
         C_Battery_Right {
             bindings = <&bapp>;
             key-positions = <16 17 18 19>;
+        };
+
+        C_SoftOff_Left {
+            bindings = <&soft_off>;
+            key-positions = <21 22 23 24>;
+        };
+
+        C_SoftOff_Right {
+            bindings = <&soft_off>;
+            key-positions = <27 28 29 30>;
         };
     };
 
