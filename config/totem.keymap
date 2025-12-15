@@ -34,7 +34,10 @@
     flavor = "balanced";
 };
 
-&sk { quick-release; };
+&sk {
+    quick-release;
+    release-after-ms = <1500>;
+};
 
 / {
     behaviors {
@@ -179,15 +182,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        sticky_shift: sticky_shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "STICKY_SHIFT";
-            bindings = <&sk LSHFT>, <&kp F21>; // toggle sticky shift
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         dqt_grv: dqt_grv {
             compatible = "zmk,behavior-mod-morph";
             label = "DQT_GRV";
@@ -305,7 +299,7 @@
                  &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J
                  &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
 &lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh   &out OUT_TOG
-                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &sticky_shift &kp RALT
+                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &sk LSHIFT    &kp RALT
             >;
         };
 
