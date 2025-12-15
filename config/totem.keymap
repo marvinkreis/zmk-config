@@ -179,13 +179,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        caps: caps {
+        sticky_shift: sticky_shift {
             compatible = "zmk,behavior-mod-morph";
-            label = "CAPS";
-            bindings = <&sk LSHFT>, <&caps_word>;
+            label = "STICKY_SHIFT";
+            bindings = <&sk LSHFT>, <&kp F21>; // toggle sticky shift
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         dqt_grv: dqt_grv {
@@ -250,6 +250,13 @@
             require-prior-idle-ms = <150>;
         };
 
+        C_CapsWord {
+            bindings = <&caps_word>;
+            key-positions = <17 16>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <150>;
+        };
+
         C_Enter {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
@@ -298,7 +305,7 @@
                  &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J
                  &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
 &lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh   &out OUT_TOG
-                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &caps         &kp RALT
+                                        &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &sticky_shift &kp RALT
             >;
         };
 
