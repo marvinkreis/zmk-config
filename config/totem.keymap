@@ -298,7 +298,7 @@
             bindings = <
                  &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J
                  &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I
-&lt 5 LG(SPACE)  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh   &out OUT_TOG
+&lt 5 TAB  &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh   &out OUT_TOG
                                         &none         &kp UNDER     &kp SPACE    &kp ESCAPE   &sk LSHIFT    &kp RALT
             >;
         };
