@@ -326,7 +326,7 @@
         &trans  &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT
         &trans  &hml LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE
 &trans  &trans  &trans        &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &tog 3
-                              &kp LC(V)  &kp LS(V)  &kp V     &trans    &kp DOT        &trans
+                              &kp LC(V)  &kp LS(V)  &kp V     &kp TAB   &kp DOT        &trans
             >;
         };
 
