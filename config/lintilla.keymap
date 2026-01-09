@@ -222,34 +222,34 @@
 
         C_Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <22 23>;
+            key-positions = <27 28>;
             timeout-ms = <60>;
         };
 
         C_Tab {
             bindings = <&kp TAB>;
-            key-positions = <12 11>;
+            key-positions = <16 17>;
             timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 
         C_STab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <18 17>;
+            key-positions = <22 23>;
             timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 
         C_CapsWord {
             bindings = <&caps_word>;
-            key-positions = <17 16>;
+            key-positions = <22 21>;
             timeout-ms = <25>;
             require-prior-idle-ms = <150>;
         };
 
         C_Enter {
             bindings = <&kp ENTER>;
-            key-positions = <28 29>;
+            key-positions = <33 34>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
         };
@@ -261,77 +261,77 @@
         Base {
             display-name = "Base";
             bindings = <
-                                                       &none                                &none
-&none       &kp B        &kp L     &kp D         &kp W         &kp Z        &sqt_leader  &kp F         &kp O         &kp U       &kp J         &none
-&lt 5 TAB   &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G        &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I   &out OUT_TOG
-            &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V        &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh
-                                        &kp UNDER     &kp SPACE    &none         &none  &sk LSHIFT    &kp RALT
+           &none                                                                                                                                                   &none
+&none      &kp B        &kp L     &kp D         &kp W         &kp Z                                           &sqt_leader  &kp F         &kp O         &kp U       &kp J        &none
+&lt 5 TAB  &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G                                           &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I  &out OUT_TOG
+           &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V                                           &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh
+                                                              &kp UNDER  &kp SPACE  &none  &none  &sk LSHIFT  &kp RALT
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-                                                       &none                                &none
-&trans  &kp BACKSLASH  &kp LT     &kp GT            &kp MINUS          &kp PIPE     &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp GRAVE          &trans
-&trans  &kp EXCL       &kp ASTRK  &kp SLASH         &kp EQUAL          &kp AMPS     &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &tog 1
-        &kp TILDE      &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PRCNT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SLASH
-                                  &trans            &trans             &trans       &trans       &trans                &trans
+        &none                                                                                                                                                                              &none
+&trans  &kp BACKSLASH  &kp LT     &kp GT            &kp MINUS          &kp PIPE                                   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp GRAVE          &trans
+&trans  &kp EXCL       &kp ASTRK  &kp SLASH         &kp EQUAL          &kp AMPS                                   &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &tog 1
+        &kp TILDE      &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PRCNT                                  &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SLASH
+                                                                       &trans     &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Num {
             display-name = "Num";
             bindings = <
-                                                       &none                                &none
-&trans  &kp MINUS     &kp N7        &kp N8        &kp N9        &kp PLUS        &trans  &trans  &trans  &trans  &trans  &none
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp X           &trans  &trans  &trans  &trans  &trans  &tog 2
-        &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+        &none                                                                                                                                 &none
+&trans  &kp MINUS     &kp N7        &kp N8        &kp N9        &kp PLUS                                      &trans  &trans  &trans  &trans  &trans  &none
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp X                                         &trans  &trans  &trans  &trans  &trans  &tog 2
+        &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK                                  &trans  &trans  &trans  &trans  &trans
+                                                                &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-                                                       &none                                &none
-&trans  &trans  &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT  &none
-&trans  &trans  &hml LCTRL R  &trans     &trans     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE  &tog 3
-        &trans  &trans        &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans    
-                              &kp LC(V)  &kp LS(V)  &kp V     &kp TAB   &kp DOT        &trans
+        &none                                                                                                                                  &none
+&trans  &trans  &trans        &trans  &trans  &trans                                         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp INSERT  &none
+&trans  &trans  &hml LCTRL R  &trans  &trans  &trans                                         &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE  &tog 3
+        &trans  &trans        &trans  &trans  &trans                                         &trans    &trans         &trans        &trans     &trans
+                                              &kp LC(V)  &kp LS(V)  &kp V  &kp TAB  &kp DOT  &trans
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-                                                       &none                                &none
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans  &tog 4
-        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+        &none                                                                                                    &none
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans                                  &trans  &trans  &trans  &trans  &trans  &none
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans                                  &trans  &trans  &trans  &trans  &trans  &tog 4
+        &kp F11  &kp F4  &kp F5  &kp F6  &trans                                  &trans  &trans  &trans  &trans  &trans
+                                         &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Hot {
             display-name = "Hot";
             bindings = <
-                                                       &none                                &none
-&trans  &kp LC(B)        &kp LC(L)  &kp LC(D)              &kp LC(W)  &kp LC(Z)    &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans  &none
-&trans  &hml LALT LC(N)  &kp LC(R)  &hml LEFT_SHIFT RC(T)  &kp LC(S)  &kp LC(E)    &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans  &bt BT_CLR
-        &hml LGUI LC(A)  &kp LC(X)  &kp LC(F)              &kp LC(C)  &kp LC(V)    &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans
-                                    &kp LC(H)              &kp LC(O)  &kp LC(Y)    &trans             &trans        &trans
+        &none                                                                                                                                                                                &none
+&trans  &kp LC(B)        &kp LC(L)  &kp LC(D)              &kp LC(W)  &kp LC(Z)                                        &kp C_PREV         &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_NEXT       &trans  &none
+&trans  &hml LALT LC(N)  &kp LC(R)  &hml LEFT_SHIFT RC(T)  &kp LC(S)  &kp LC(E)                                        &kp C_VOLUME_DOWN  &kp C_STOP    &kp C_PLAY_PAUSE    &kp C_VOLUME_UP  &trans  &bt BT_CLR
+        &hml LGUI LC(A)  &kp LC(X)  &kp LC(F)              &kp LC(C)  &kp LC(V)                                        &kp LC(MINUS)      &kp LC(N0)    &kp RC(PLUS)        &kp LC(EQUAL)    &trans
+                                                                      &kp LC(H)  &kp LC(O)  &kp LC(Y)  &trans  &trans  &trans
             >;
         };
 
         Game {
             display-name = "Game";
             bindings = <
-                                                       &none                                &none
-&none      &kp Q  &kp W  &kp E    &kp R    &kp T        &kp Y         &kp U         &kp I         &kp O    &kp P     &none
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F    &kp G        &kp H         &kp J         &kp K         &kp L    &kp SEMI  &bspc_enter
-           &kp Z  &kp X  &kp C    &kp V    &kp B        &kp N         &kp M         &kp COMMA     &kp DOT  &kp FSLH
-                         &kp ESC  &kp TAB  &kp SPACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+           &none                                                                                                                         &none
+&none      &kp Q  &kp W  &kp E  &kp R  &kp T                                                    &kp Y         &kp U  &kp I      &kp O    &kp P     &none
+&kp LSHFT  &kp A  &kp S  &kp D  &kp F  &kp G                                                    &kp H         &kp J  &kp K      &kp L    &kp SEMI  &bspc_enter
+           &kp Z  &kp X  &kp C  &kp V  &kp B                                                    &kp N         &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                       &kp ESC  &kp TAB  &kp SPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
             >;
         };
     };
