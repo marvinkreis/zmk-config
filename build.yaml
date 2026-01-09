@@ -9,3 +9,13 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: xiao_ble
     shield: settings_reset
+  - board: xiao_ble
+    shield: lintilla_dongle dongle_display
+    snippet: studio-rpc-usb-uart
+    artifact-name: lintilla_dongle
+  - board: xiao_ble
+    shield: lintilla_left_peripheral rgbled_adapter
+    artifact-name: lintilla_left
+  - board: xiao_ble
+    shield: lintilla_right_peripheral rgbled_adapter
+    artifact-name: lintilla_right

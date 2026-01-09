@@ -9,6 +9,8 @@ manifest:
       url-base: https://github.com/urob
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,6 +22,9 @@ manifest:
       path: modules/zmk/leader-key
     - name: zmk-behavior-battery-percentage-printer
       remote: badjeff
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
       revision: main
   self:
     path: config
