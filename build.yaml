@@ -10,7 +10,7 @@ include:
   - board: xiao_ble
     shield: settings_reset
   - board: xiao_ble
-    shield: lintilla_dongle dongle_display
+    shield: lintilla_dongle
     snippet: studio-rpc-usb-uart
     artifact-name: lintilla_dongle
   - board: xiao_ble
