@@ -265,7 +265,7 @@
 &none      &kp B        &kp L     &kp D         &kp W         &kp Z                                           &sqt_leader  &kp F         &kp O         &kp U       &kp J        &none
 &lt 5 TAB  &hml LALT N  &htl 1 R  &hml LSHFT T  &htl 3 S      &kp G                                           &htr 4 Y     &htr 2 H      &hmr RSHFT A  &htr 1 E    &hmr LALT I  &out OUT_TOG
            &hml LGUI Q  &kp X     &kp M         &hml LCTRL C  &kp V                                           &kp K        &hmr RCTRL P  &comma_excl   &dot_qmark  &fslh_bslh
-                                                             &kp UNDER  &kp SPACE &kp TAB &kp LS(TAB) &kp ESCAPE  &sk LSHIFT
+                                                             &kp TAB &kp SPACE &kp UNDER &sk LSHIFT &kp ESCAPE  &kp LS(TAB)
             >;
         };
 
